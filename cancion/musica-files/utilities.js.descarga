@@ -1,0 +1,49 @@
+function adjustAllContainerImagesToParent(sectionSelector){
+     // For each image in section
+    var images = $(sectionSelector).find("img");
+    for(var i=0;i<images.length;i++){
+    	adjustImageToParent(images.eq(i));
+    }
+}
+
+function adjustImageToParent(imgSelector){
+	var image = $(imgSelector);
+    var wrapper = image.parent();
+
+    var width = image.width();
+    var height = image.height();
+    var wrapperWidth = wrapper.innerWidth();
+    var wrapperHeight = wrapper.innerHeight();
+
+    //if image is bigger than wrapper, adjust it
+    if(width > wrapperWidth && height > wrapperHeight){
+        if(width > height){
+            image.height(wrapperHeight);
+        } else if(height > width){
+            image.width(wrapperWidth);
+        } else {
+            image.width(wrapperWidth);
+            image.height(wrapperHeight);
+        }
+        // update image widht and height
+        width = image.width();
+        height = image.height();
+    }
+    
+    //if image is not square, center it
+    var offset;
+    if(width > height){
+        // If width greater, center horizontally
+        offset = (width - height) / 2;
+        image.css("margin-left",-offset);
+        //image.css("transform","translateX(-"+offset+"px)");
+    } else if(height > width) {
+        // If height greater, center vertically
+        offset = (height - width) / 2;
+        image.css("margin-top",-offset);
+    } else {
+        // Otherwise, restore defaults
+        image.css("margin-left","");
+        image.css("margin-top","");
+    }
+}

@@ -1,0 +1,67 @@
+var myLazyLoad = null;
+var retriesLazyImages = {};
+
+
+$('document').ready(function(){
+    myLazyLoad = new LazyLoad({
+            elements_selector: ".lazy",
+            threshold: 800,
+            callback_error: function(e){
+                var elementSrc = $(e).data("bg");
+                if(elementSrc){
+                    elementSrc = removeParam("rndll",elementSrc);
+                }
+                if(typeof retriesLazyImages[elementSrc] == 'undefined'){
+                    retriesLazyImages[elementSrc] = 0;
+                }
+                if(parseInt(retriesLazyImages[elementSrc]) < 5){
+                    LazyLoad.resetStatus(e);
+                    var elementSrcWithUrl = addRnd(elementSrc);
+                    console.log(elementSrcWithUrl);
+                    $(e).data("bg",elementSrcWithUrl);
+                    $(e).attr('data-bg', elementSrcWithUrl);
+                    retriesLazyImages[elementSrc]++;
+                    
+                    console.log(retriesLazyImages);
+                    var delay = retriesLazyImages[elementSrc]*100; 
+                    setTimeout(function(){
+                        myLazyLoad.update();
+                    },Math.min(delay,300));
+                }
+            }
+            /*callback_enter: function(){console.log('enter');},
+            callback_set: function(){console.log('set');},
+            callback_load: function(){console.log('load');},
+            callback_error: function(){console.log('error');}*/
+    });
+});
+
+function addRnd(urlStr){
+  let rnd = Math.random();
+  console.log("---------------------");
+  console.log(urlStr);
+  console.log("---------------------");
+  let url = new URL(urlStr);
+  url.searchParams.set("rndll",rnd);  // in case called multiple times
+  return url.toString();
+};
+
+function removeParam(key, sourceURL) {
+    var rtn = sourceURL.split("?")[0],
+        param,
+        params_arr = [],
+        queryString = (sourceURL.indexOf("?") !== -1) ? sourceURL.split("?")[1] : "";
+    if (queryString !== "") {
+        params_arr = queryString.split("&");
+        for (var i = params_arr.length - 1; i >= 0; i -= 1) {
+            param = params_arr[i].split("=")[0];
+            if (param === key) {
+                params_arr.splice(i, 1);
+            }
+        }
+        if(params_arr && typeof params_arr == 'array' && params_arr.length > 0){
+            rtn = rtn + "?" + params_arr.join("&");
+        }
+    }
+    return rtn;
+}

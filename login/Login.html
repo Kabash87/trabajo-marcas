@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://www.elportaldemusica.es/site/login -->
+<html lang="es-ES">
+  <script
+    src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js"
+    id="eppiocemhmnlbhjplcgkofciiegomcon"
+  ></script>
+  <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script>
+  <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css" id="alertifyCSS">
+      /* style.css */
+    </style>
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <!-- End Cookie Consent plugin -->
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="csrf-param" content="_SEC-EPDM" />
+    <meta
+      name="csrf-token"
+      content="f8QvQ6KBh8j91SMiqmDZl7Aiqpk_daxh4Tsesk8j9MY1tX8Ak8KzkoWsSVTEVb3n5xTL32kxxweQcnPfAHLCpQ=="
+    />
+    <title>Login</title>
+    <meta
+      name="description"
+      content="LISTAS OFICIALES DE VENTAS DE MUSICA de ESPAÑA"
+    />
+    <meta name="author" content="El portal de Música" />
+    <meta name="publisher" content="El portal de Música" />
+    <link href="./Login_files/normalize.css" rel="stylesheet" />
+    <link href="./Login_files/yoshiko.css" rel="stylesheet" />
+    <link href="./Login_files/yoshiko_custom.css" rel="stylesheet" />
+    <link href="./Login_files/font-awesome.min.css" rel="stylesheet" />
+    <link href="./Login_files/bootstrap.css" rel="stylesheet" />
+    <link href="./Login_files/jquery.rateyo.min.css" rel="stylesheet" />
+    <link href="./Login_files/alertify.css" rel="stylesheet" />
+    <link href="./Login_files/jquery-ui.css" rel="stylesheet" />
+    <link href="./Login_files/cookieconsent.css" rel="stylesheet" />
+    <link href="./Login_files/fonts.css" rel="stylesheet" />
+    <link href="./Login_files/site.css" rel="stylesheet" />
+    <link href="./Login_files/main.css" rel="stylesheet" />
+    <script src="./Login_files/jquery.js.descarga"></script>
+    <script
+      bis_use="true"
+      type="text/javascript"
+      charset="utf-8"
+      data-bis-config='["facebook.com/","twitter.com/","youtube-nocookie.com/embed/","//vk.com/","//www.vk.com/","//linkedin.com/","//www.linkedin.com/","//instagram.com/","//www.instagram.com/","//www.google.com/recaptcha/api2/","//hangouts.google.com/webchat/","//www.google.com/calendar/","//www.google.com/maps/embed","spotify.com/","soundcloud.com/","//player.vimeo.com/","//disqus.com/","//tgwidget.com/","//js.driftt.com/","friends2follow.com","/widget","login","//video.bigmir.net/","blogger.com","//smartlock.google.com/","//keep.google.com/","/web.tolstoycomments.com/","moz-extension://","chrome-extension://","/auth/","//analytics.google.com/","adclarity.com","paddle.com/checkout","hcaptcha.com","recaptcha.net","2captcha.com","accounts.google.com","www.google.com/shopping/customerreviews","buy.tinypass.com","gstatic.com","secureir.ebaystatic.com","docs.google.com","contacts.google.com","github.com","mail.google.com","chat.google.com","audio.xpleer.com","keepa.com","static.xx.fbcdn.net","sas.selleramp.com","1plus1.video","console.googletagservices.com"]'
+      src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executers/vi-tr.js"
+    ></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async="" src="./Login_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-27075944-1");
+    </script>
+  </head>
+
+  <body
+    bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjE0Iiwic2NvcmUiOjIwMDE0fV0="
+  >
+    <header>
+      <div class="header-navbar" bis_skin_checked="1">
+        <div class="container" bis_skin_checked="1">
+          <div class="header-logo col-xs-12 col-sm-3" bis_skin_checked="1">
+            <a class="header-logo-href" href="../El portal de Música.html"
+              ><img
+                class="header-logo-img"
+                src="./Login_files/epdm_logo.png"
+                alt="El portal de Música"
+                title="El portal de Música"
+            /></a>
+          </div>
+          <div
+            class="header-nav col-xs-12 col-sm-9 text-right no-padding"
+            bis_skin_checked="1"
+          >
+            <ul class="header-nav-list">
+              <li class="header-nav-list-entry">
+                <a href="#">NOVEDADES</a>
+              </li>
+              <li class="header-nav-list-entry">
+                <a href="#">CERTIFICADOS</a>
+              </li>
+              <li class="header-nav-list-entry">
+                <a href="#">LISTAS</a>
+              </li>
+              <li class="header-nav-list-entry separator hidden-xs"></li>
+              <li class="header-nav-list-entry light selected">
+                <a href="#"><span class="login"></span>Inicia sesión</a>
+              </li>
+
+              <li class="header-nav-list-entry light hidden-xs">
+                <a href="../signup/Signup.html"
+                  ><span class="login"></span>Regístrate</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="content" bis_skin_checked="1">
+      <div class="row background" bis_skin_checked="1">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2" bis_skin_checked="1">
+          <div class="site-login" bis_skin_checked="1">
+            <h1>Iniciar sesión</h1>
+            <form
+              id="login-form"
+              class="form col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3"
+              action="https://www.elportaldemusica.es/site/login"
+              method="post"
+            >
+              <input
+                type="hidden"
+                name="_SEC-EPDM"
+                value="f8QvQ6KBh8j91SMiqmDZl7Aiqpk_daxh4Tsesk8j9MY1tX8Ak8KzkoWsSVTEVb3n5xTL32kxxweQcnPfAHLCpQ=="
+              />
+              <section class="content">
+                <span class="input input--yoshiko required">
+                  <input
+                    type="text"
+                    id="input-username"
+                    class="input__field input__field--yoshiko"
+                    name="LoginForm[username]"
+                  />
+                  <label
+                    class="input__label input__label--yoshiko"
+                    for="input-username"
+                  >
+                    <span
+                      class="input__label-content input__label-content--yoshiko"
+                      data-content="Usuario ó Correo Electónico"
+                      >Usuario ó Correo Electónico</span
+                    >
+                  </label>
+                </span>
+                <div class="form-group" bis_skin_checked="1">
+                  <div class="help-block" bis_skin_checked="1"></div>
+                </div>
+
+                <span class="input input--yoshiko required">
+                  <input
+                    type="password"
+                    id="input-password"
+                    class="input__field input__field--yoshiko"
+                    name="LoginForm[password]"
+                  />
+                  <label
+                    class="input__label input__label--yoshiko"
+                    for="input-password"
+                  >
+                    <span
+                      class="input__label-content input__label-content--yoshiko"
+                      data-content="Contraseña"
+                      >Contraseña</span
+                    >
+                  </label>
+                </span>
+                <div class="form-group" bis_skin_checked="1">
+                  <div class="help-block" bis_skin_checked="1"></div>
+                </div>
+              </section>
+
+              <div class="text-info" bis_skin_checked="1">
+                ¿Olvidaste tu contraseña?
+                <a
+                  href="https://www.elportaldemusica.es/site/request-password-reset"
+                  >Recuperar contraseña</a
+                >.
+              </div>
+
+              <div class="form-group" bis_skin_checked="1">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  name="login-button"
+                >
+                  Entrar
+                </button>
+              </div>
+              <br />
+
+              <div class="text-info-separator" bis_skin_checked="1">
+                <div class="separator" bis_skin_checked="1"></div>
+                <div class="text" bis_skin_checked="1">
+                  ¿Aún no tienes una cuenta?
+                </div>
+              </div>
+              <div class="form-group" bis_skin_checked="1">
+                <a
+                  class="btn btn-secondary"
+                  href="https://www.elportaldemusica.es/site/signup"
+                  >Regístrate</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-social-links" bis_skin_checked="1">
+      <ul class="footer-section-socialmedia">
+        <!--
+ -->
+        <li id="fb" class="footer-section-socialmedia-entry">
+          <a href="https://www.facebook.com/elportaldemusica" target="_blank"
+            ><i
+              class="fa fa-facebook fa-lg"
+              alt="Facebook"
+              title="Facebook"
+              aria-hidden="true"
+            ></i
+          ></a>
+        </li>
+        <!--
+ -->
+        <li id="sp" class="footer-section-socialmedia-entry">
+          <a
+            href="https://open.spotify.com/user/elportaldemusica"
+            target="_blank"
+            ><i
+              class="fa fa-spotify fa-lg"
+              alt="Spotify"
+              title="Spotify"
+              aria-hidden="true"
+            ></i
+          ></a>
+        </li>
+        <!--
+ -->
+        <li id="tw" class="footer-section-socialmedia-entry">
+          <a href="https://twitter.com/portaldemusica" target="_blank"
+            ><i
+              class="fa fa-twitter fa-lg"
+              alt="Twitter"
+              title="Twitter"
+              aria-hidden="true"
+            ></i
+          ></a>
+        </li>
+        <!--
+ -->
+        <li id="ins" class="footer-section-socialmedia-entry">
+          <a
+            href="https://www.instagram.com/elportaldemusica"
+            target="_blank"
+            style="border-radius: 0"
+            ><img
+              src="./Login_files/instagram_2017.png"
+              alt=""
+              style="width: 100%"
+          /></a>
+        </li>
+        <!--
+   -->
+        <li id="yt" class="footer-section-socialmedia-entry rss">
+          <a href="https://www.elportaldemusica.es/rss" target="_blank"
+            ><i
+              class="fa fa-rss fa-lg"
+              alt="RSS"
+              title="RSS"
+              aria-hidden="true"
+            ></i
+          ></a>
+        </li>
+        <!--  -->
+      </ul>
+    </div>
+
+    <footer>
+      <div class="container" bis_skin_checked="1">
+        <div class="footer-section col-xs-12 text-center" bis_skin_checked="1">
+          <ul>
+            <li class="footer-section-links-list col-xs-12 col-sm-4">
+              <ul>
+                <li class="footer-section-title">
+                  <p>INFORMACIÓN</p>
+                </li>
+                <li class="footer-section-link">
+                  <a
+                    href="https://www.elportaldemusica.es/site/politica-privacidad"
+                    >Política de Privacidad</a
+                  >
+                </li>
+                <li class="footer-section-link">
+                  <a href="https://www.elportaldemusica.es/site/aviso-legal"
+                    >Aviso Legal</a
+                  >
+                </li>
+                <li class="footer-section-link">
+                  <a href="https://www.elportaldemusica.es/site/cookies"
+                    >Política de Cookies</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- 
+                            -->
+            <li class="footer-section-links-list col-xs-12 col-sm-4">
+              <ul>
+                <li class="footer-section-title">
+                  <p>USUARIO</p>
+                </li>
+                <li class="footer-section-link">
+                  <a href="https://www.elportaldemusica.es/site/signup"
+                    >Registrate</a
+                  >
+                </li>
+                <li class="footer-section-link">
+                  <a href="https://www.elportaldemusica.es/site/login"
+                    >Inicia sesión</a
+                  >
+                </li>
+                <li class="footer-section-link">
+                  <a
+                    href="https://www.elportaldemusica.es/site/request-password-reset"
+                    >¿Olvidaste la contraseña?</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!--  
+                            -->
+            <li class="footer-section-links-list col-xs-12 col-sm-4">
+              <ul>
+                <li class="footer-section-title">
+                  <p>INFORMACIÓN</p>
+                </li>
+                <li class="footer-section-link">
+                  <a href="https://www.elportaldemusica.es/site/last"
+                    >Últimas novedades</a
+                  >
+                </li>
+                <li class="footer-section-link">
+                  <a
+                    href="https://www.elportaldemusica.es/lists/top-100-albums/2024/16"
+                    >Top 100 Álbumes</a
+                  >
+                </li>
+                <li class="footer-section-link">
+                  <a
+                    href="https://www.elportaldemusica.es/lists/top-100-canciones/2024/16"
+                    >Top 100 Canciones</a
+                  >
+                </li>
+                <li class="footer-section-link">
+                  <a
+                    href="https://www.elportaldemusica.es/lists/top-100-vinilos/2024/16"
+                    >Top 100 Vinilos</a
+                  >
+                </li>
+                <li class="footer-section-link">
+                  <a
+                    href="https://www.elportaldemusica.es/lists/top-50-radios/2024/16"
+                    >Top 50 Radios</a
+                  >
+                </li>
+                <li class="footer-section-link">
+                  <a href="https://www.elportaldemusica.es/lists"
+                    >Listas Actuales</a
+                  >
+                </li>
+                <li class="footer-section-link"><br /></li>
+                <li class="footer-section-link languages-selector">
+                  <a
+                    class="flag en-US"
+                    href="https://www.elportaldemusica.es/site/login?language=en-US"
+                    >English</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section col-xs-12 text-center" bis_skin_checked="1">
+          <p class="footer-section-socialmedia-title">Síguenos en:</p>
+          <ul class="footer-section-socialmedia">
+            <!--
+ -->
+            <li id="fb" class="footer-section-socialmedia-entry">
+              <a
+                href="https://www.facebook.com/elportaldemusica"
+                target="_blank"
+                ><img src="../images/redes/face.png" alt="" style="width: 100%"
+              /></a>
+            </li>
+            <!--
+ -->
+            <li id="sp" class="footer-section-socialmedia-entry">
+              <a
+                href="https://open.spotify.com/user/elportaldemusica"
+                target="_blank"
+                ><img
+                  src="../images/redes/klipartz.com.png"
+                  alt=""
+                  style="width: 100%"
+              /></a>
+            </li>
+            <!--
+ -->
+            <li id="tw" class="footer-section-socialmedia-entry">
+              <a href="https://twitter.com/portaldemusica" target="_blank"
+                ><img
+                  src="../images/redes/twitter.png"
+                  alt=""
+                  style="width: 100%"
+              /></a>
+            </li>
+            <!--
+ -->
+            <li id="ins" class="footer-section-socialmedia-entry">
+              <a
+                href="https://www.instagram.com/elportaldemusica"
+                target="_blank"
+                style="border-radius: 0"
+                ><img
+                  src="./Login_files/instagram_2017.png"
+                  alt=""
+                  style="width: 100%"
+              /></a>
+            </li>
+            <!--
+   -->
+          </ul>
+        </div>
+        <div class="footer-section col-xs-12 text-center" bis_skin_checked="1">
+          <div class="text-center" bis_skin_checked="1">
+            <div class="footer-section-gob" bis_skin_checked="1">
+              <img
+                id="mecd"
+                src="./Login_files/gob_espana_mecd.jpg"
+                alt="Ministerio de educación, cultura y deporte, Gobierno de España"
+                title="Ministerio de educación, cultura y deporte, Gobierno de España"
+              />
+              <div style="color: white; margin-top: 10px" bis_skin_checked="1">
+                Proyecto financiado por el INAEM, Ministerio de Cultura y
+                Deporte
+              </div>
+            </div>
+          </div>
+          <div class="text-center" bis_skin_checked="1">
+            <div class="footer-section-gob" bis_skin_checked="1">
+              <img
+                src="./Login_files/financiado_logos.png"
+                alt="Plan de recuperación, transformación y resiliencia"
+                title="Plan de recuperación, transformación y resiliencia"
+                style="width: 90%"
+              />
+            </div>
+          </div>
+          <p class="footer-section-copyright">2024 © PROMUSICAE</p>
+        </div>
+      </div>
+
+      <div style="color: rgba(19, 19, 19, 1)" bis_skin_checked="1">
+        -: cu<br />IP: 10.10.1.132<br />EX-IP: 80.29.46.184<br />Frontal: Prod 4
+      </div>
+    </footer>
+
+    <script>
+      var currentConsents = JSON.parse(
+        '{"necessary":{"label":"Necesarias","checked":true,"disabled":true,"cookies":[{"name":"EPDMSESSID"},{"name":"_SEC-EPDM"},{"name":"ApplicationGatewayAffinityCORS"},{"name":"ApplicationGatewayAffinity"},{"name":"cookie_consent_status"}],"details":[{"title":"Cookie","description":"EPDMSESSID"},{"title":"Cookie","description":"_SEC-EPDM"},{"title":"Cookie","description":"ApplicationGatewayAffinityCORS"},{"title":"Cookie","description":"ApplicationGatewayAffinity"},{"title":"Cookie","description":"cookie_consent_status"}]},"statistics":{"checked":false,"label":"Anal\u00edtica","cookies":[{"name":"_ga"},{"name":"_gat","domain":"","path":"\/"},{"name":"_gid","domain":"","path":"\/"},{"name":"_gat_gtag_UA_27075944_1","domain":".elportaldemusica.es","path":"\/"},{"name":"_ga","domain":".elportaldemusica.es","path":"\/"},{"name":"_gat","domain":".elportaldemusica.es","path":"\/"},{"name":"_gid","domain":".elportaldemusica.es","path":"\/"}],"details":[{"title":"Google Analytics","description":"Crea datos anal\u00edticos y estad\u00edsticos"},{"title":"Cookie","description":"_ga, _gat, _gid, _gali"}]},"media":{"checked":false,"label":"Personalizaci\u00f3n","description":"Necesarias para visualizar los reproductores de m\u00fasica","cookies":[{"name":"_ga_S35RN5WNT2","domain":".spotify.com","path":"\/"},{"name":"_pin_unauth","domain":".spotify.com","path":"\/"},{"name":"sp_adid","domain":".spotify.com","path":"\/"},{"name":"_ga","domain":".spotify.com","path":"\/"},{"name":"OptanonAlertBoxClosed","domain":".spotify.com","path":"\/"},{"name":"sp_key","domain":".spotify.com","path":"\/"},{"name":"sp_t","domain":".spotify.com","path":"\/"},{"name":"OptanonConsent","domain":".spotify.com","path":"\/"},{"name":"spot","domain":".spotify.com","path":"\/"},{"name":"_scid","domain":".spotify.com","path":"\/"},{"name":"CONSENT","domain":".youtube.com","path":"\/"},{"name":"SID","domain":".youtube.com","path":"\/"},{"name":"PREF","domain":".youtube.com","path":"\/"},{"name":"APISID","domain":".youtube.com","path":"\/"},{"name":"SAPISID","domain":".youtube.com","path":"\/"},{"name":"__Secure-3PAPISID","domain":".google.com","path":"\/"},{"name":"__Secure-3PAPISID","domain":".youtube.com","path":"\/"},{"name":"SIDCC","domain":".youtube.com","path":"\/"},{"name":"SAPISID","domain":".google.com","path":"\/"},{"name":"APISID","domain":".google.com","path":"\/"},{"name":"SEARCH_SAMESITE","domain":".google.com","path":"\/"},{"name":"OTZ","domain":"www.google.com","path":"\/"},{"name":"SID","domain":".google.com","path":"\/"},{"name":"1P_JAR","domain":".google.com","path":"\/"},{"name":"SDVID","domain":"www.google.com","path":"\/"},{"name":"SIDCC","domain":".google.com","path":"\/"},{"name":"_ga","domain":".apis.google.com","path":"\/"},{"name":"__utma","domain":".deezer.com","path":"\/"},{"name":"__utmz","domain":".deezer.com","path":"\/"},{"name":"_abck","domain":".deezer.com","path":"\/"},{"name":"dssf","domain":".apple.com","path":"\/"},{"name":"aa_lastvisit","domain":".apple.com","path":"\/"},{"name":"xp_abc","domain":".apple.com","path":"\/"},{"name":"s_fid","domain":".apple.com","path":"\/"},{"name":"xp_ab","domain":".apple.com","path":"\/"},{"name":"xp_ci","domain":".apple.com","path":"\/"}],"details":[{"title":"youtube.com","description":"Reproductor de v\u00eddeo"},{"title":"deezer.com","description":"Reproductor de m\u00fasica"},{"title":"music.apple.com","description":"Reproductor de m\u00fasica"},{"title":"spotify.com","description":"Reproductor de m\u00fasica"}]}}'
+      );
+    </script>
+
+    <div class="cookie-consent-popup" bis_skin_checked="1">
+      <div class="cookie-consent-top-wrapper" bis_skin_checked="1">
+        <div class="cookie-consent-disclaimer" bis_skin_checked="1">
+          <p class="cookie-consent-message">
+            <span class="cookie-consent-text">
+              En
+              <a href="http://www.elportaldemusica.es/"
+                >www.elportaldemusica.es</a
+              >
+              utilizamos cookies, propias y de terceros,
+              <strong>de personalización</strong> para mejorar la calidad del
+              producto o servicio ofrecido; <strong>de análisis</strong> para
+              medir la audiencia y analizar el comportamiento de los usuarios
+              Puede obtener más información en nuestra
+              <a
+                href="https://www.elportaldemusica.es/site/cookies"
+                target="blank"
+                >Política de Cookies.</a
+              >
+
+              Ud. puede configurar las cookies a través del siguiente panel.
+              "Aceptar todas" o modificarlas de forma unitaria.
+            </span>
+            <a
+              class="cookie-consent-link"
+              href="https://www.elportaldemusica.es/site/cookies"
+              >Detalles de las Cookies</a
+            >
+          </p>
+        </div>
+        <div class="cookie-consent-actions" bis_skin_checked="1">
+          <button class="cookie-consent-controls-toggle">Configurar</button>
+          <button class="cookie-consent-accept-all">Aceptar Todas</button>
+        </div>
+      </div>
+      <div class="cookie-consent-controls" bis_skin_checked="1">
+        <label for="necessary" class="cookie-consent-control">
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="necessary"
+              class="cookie-consent-checkbox"
+              name="necessary"
+              value="1"
+              checked=""
+              disabled=""
+              data-cc-consent="necessary"
+            />
+            <span class="slider round"></span>
+          </label>
+
+          <span> Necesarias </span>
+        </label>
+        <label for="statistics" class="cookie-consent-control">
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="statistics"
+              class="cookie-consent-checkbox"
+              name="statistics"
+              value="1"
+              data-cc-consent="statistics"
+            />
+            <span class="slider round"></span>
+          </label>
+
+          <span> Analítica </span>
+        </label>
+        <label for="media" class="cookie-consent-control">
+          <label class="switch">
+            <input
+              type="checkbox"
+              id="media"
+              class="cookie-consent-checkbox"
+              name="media"
+              value="1"
+              data-cc-consent="media"
+            />
+            <span class="slider round"></span>
+          </label>
+
+          <span> Personalización </span>
+        </label>
+        <button class="cookie-consent-save" data-cc-namespace="popup">
+          Guardar
+        </button>
+      </div>
+    </div>
+
+    <script src="./Login_files/classie.js.descarga"></script>
+    <script src="./Login_files/yoshiko.js.descarga"></script>
+    <script src="./Login_files/yii.js.descarga"></script>
+    <script src="./Login_files/yii.activeForm.js.descarga"></script>
+    <script src="./Login_files/bootstrap.js.descarga"></script>
+    <script src="./Login_files/jquery.rateyo.min.js.descarga"></script>
+    <script src="./Login_files/alertify.js.descarga"></script>
+    <script src="./Login_files/jquery-ui.js.descarga"></script>
+    <script src="./Login_files/URI.min.js.descarga"></script>
+    <script src="./Login_files/lazyload.min.js.descarga"></script>
+    <script src="./Login_files/lazyload-init.js.descarga"></script>
+    <script src="./Login_files/nav-search.js.descarga"></script>
+    <script src="./Login_files/rating.js.descarga"></script>
+    <script src="./Login_files/cookie-consent.js.descarga"></script>
+    <script src="./Login_files/cookie-consent-init.js.descarga"></script>
+    <script>
+      // Collapse header on scroll and keep it fixed
+      /*$(window).scroll(function(e){
+        var imageHeader = $(".header-image");
+        if($(this).scrollTop() > 200){
+            imageHeader.addClass("expand");
+	    } else {
+            imageHeader.removeClass("expand");
+	    }
+    });*/
+    </script>
+    <script>
+      jQuery(function ($) {
+        jQuery("#login-form").yiiActiveForm([], []);
+      });
+    </script>
+  </body>
+</html>
