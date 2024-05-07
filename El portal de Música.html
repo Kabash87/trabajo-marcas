@@ -8,6 +8,10 @@
   <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script>
   <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script>
   <head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style type="text/css" id="alertifyCSS">
       /* style.css */
@@ -213,9 +217,7 @@
             <ul id="lo-ultimo-list" class="section-list">
               <!--Perfect Night-->
               <li class="single-entry">
-                <a
-                  href="cancion/musica.html"
-                >
+                
                   <div class="single-entry-image-wrapper" bis_skin_checked="1">
                     <div
                       class="lazy single-entry-image item-img-cover loaded"
@@ -224,9 +226,10 @@
                         background-image: url('https://image.bugsm.co.kr/album/images/500/40924/4092452.jpg');
                       "
                       bis_skin_checked="1"
-                    ></div>
+                      >
+                    <img src="https://image.bugsm.co.kr/album/images/500/40924/4092452.jpg" alt="imagen 1" width="100%" class="cancion" data-src="archives/audio-perfectnight.mp3" data-video="archives/video-perfectnight.mp4" style="cursor: pointer;"></div>
                   </div>
-                </a>
+                
 
                 <p class="single-entry-album" title="La Leyenda Del Tiempo">
                   <a
@@ -248,32 +251,27 @@
 
               <!--Cupid KPOP-->
               <li class="single-entry">
-                <a
-                  href="https://www.elportaldemusica.es/single/johnny-cash-well-alright"
-                >
                   <div class="single-entry-image-wrapper" bis_skin_checked="1">
                     <div
                       class="lazy single-entry-image item-img-cover loaded"
+                      alt="Cancion 2"
                       data-ll-status="loaded"
                       style="
                         background-image: url('https://i1.sndcdn.com/artworks-owyfYPKMmoRDDqVw-Uia86Q-t500x500.jpg');
                       "
                       bis_skin_checked="1"
-                    ></div>
+                      
+                    >
+                    <img src="https://i1.sndcdn.com/artworks-owyfYPKMmoRDDqVw-Uia86Q-t500x500.jpg" alt="imagen 2" width="100%" class="cancion" data-src="archives/audio-cupidfifty.mp3" data-video="archives/video-cupidfifty.mp4" style="cursor: pointer;">
                   </div>
-                </a>
+                  </div>
+                
 
                 <p class="single-entry-album" title="Well Alright">
-                  <a
-                    href="https://www.elportaldemusica.es/single/johnny-cash-well-alright"
-                    >Cupid</a
-                  >
+                    Cupid
                 </p>
                 <p class="single-entry-author" title="Johnny Cash">
-                  <a
-                    href="https://www.elportaldemusica.es/single/johnny-cash-well-alright"
-                    >Fifty Fifty</a
-                  >
+                  Fifty Fifty
                 </p>
                 <p class="single-entry-genre" title="K-POP">
                   K-POP
@@ -533,11 +531,136 @@
               </li>
             </ul>
 
-            <a
-              class="clear-button single-entry-button"
-              href="https://www.elportaldemusica.es/site/last"
-              >Ver lista completa</a
-            >
+          <!--Parte del reproductor-->
+            <div class="main-block" bis_skin_checked="1">
+              <div class="row" bis_skin_checked="1">
+                <div
+                  class="col-xs-12 col-sm-5 col-sm-offset-1 content-video"
+                  bis_skin_checked="1"
+                >
+                  <div class="title" bis_skin_checked="1">Videoclip</div>
+                  <div class="video" style="overflow: auto" bis_skin_checked="1">
+                    <video
+                      src="archives/video-perfectnight.mp4"
+                      class="video"
+                      id="video"
+                      autoplay
+                      width="100%"
+                      loop
+                      muted
+                    ></video>
+                  </div>
+                </div>
+  
+                <!--REPRODUCTOR DE MUSICA-->
+                <div class="col-xs-12 col-sm-5 view-details" bis_skin_checked="1">
+                  <div class="details" bis_skin_checked="1">
+                    <div class="content-player" bis_skin_checked="1">
+                      <!--Player en resumen-->
+                      <div
+                        class="player"
+                        style="position: relative"
+                        bis_skin_checked="1"
+                      >
+                        <div class="imagen">
+                          <img
+                            src="https://image.bugsm.co.kr/album/images/500/40924/4092452.jpg"
+                            alt="Perfect Night"
+                            class="song-img"
+                          />
+                        </div>
+                        <audio
+                          id="song"
+                          class="musica-audio"
+                          src="archives/audio-perfectnight.mp3"
+                        ></audio>
+                        <div class="info-song">
+                          <h4>Perfect Night</h4>
+                          <p>Le Sserafim</p>
+                        </div>
+  
+                        <input type="range" value="0" id="progreso" />
+                        <div class="controls">
+                          <div><i class="fa-solid fa-backward"></i></div>
+                          <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                          <div><i class="fa-solid fa-forward"></i></div>
+                        </div>
+  
+                        <script>
+                          let progress = document.getElementById("progreso");
+                          let song = document.getElementById("song");
+                          let ctrlIcon = document.getElementById("ctrlIcon");
+
+                          song.onloadeddata = function(){
+                            progress.max = song.duration;
+                            progress.value = song.currentTime;
+                          }
+
+                          function playPause() {
+                            if (ctrlIcon.classList.contains("fa-pause")) {
+                              song.pause();
+                              ctrlIcon.classList.remove("fa-pause");
+                              ctrlIcon.classList.add("fa-play");
+                            }else{
+                              song.play();
+                              ctrlIcon.classList.add("fa-pause");
+                              ctrlIcon.classList.remove("fa-play");
+                            }
+                          }
+
+                          if (song.play()) {
+                            setInterval(()=>{
+                              progress.value = song.currentTime;
+                            }, 500);
+                          }
+
+                          progress.onchange = function(){
+                            song.play();
+                            song.currentTime = progress.value;
+                            ctrlIcon.classList.add("fa-pause");
+                            ctrlIcon.classList.remove("fa-play");
+                          }
+
+
+                          
+                          // Esperar a que el DOM esté completamente cargado
+                          document.addEventListener("DOMContentLoaded", function() {
+                            // Obtener todas las imágenes con la clase "cancion"
+                            var imagenes = document.querySelectorAll(".cancion");
+                            
+                            // Iterar sobre cada imagen 
+                            imagenes.forEach(function(imagen) {
+                              // Agregar un evento de clic a cada imagen
+                              imagen.addEventListener("click", function() {
+                                // Obtener la ruta de la canción asociada a la imagen clicada
+                                var nuevaCancion = imagen.getAttribute("data-src");
+                                var nuevoVideo = imagen.getAttribute("data-video")
+                                
+                                // Obtener el elemento de audio
+                                var reproductor = document.getElementById("song");
+                                var videoReproductor = document.getElementById("video")
+                                
+                                // Cambiar la fuente de audio del reproductor
+                                reproductor.src = nuevaCancion;
+                                videoReproductor.src = nuevoVideo;
+                                
+                                // Reproducir la nueva canción automáticamente
+                                reproductor.play();
+                                videoReproductor.play();
+                              });
+                            });
+                          });
+                        </script>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Fin del reproductor-->
+              </div>
+            </div>
+
+
           </div>
         </section>
 
@@ -971,11 +1094,7 @@
               </li>
               <div class="clearfix" bis_skin_checked="1"></div>
             </ul>
-            <a
-              class="clear-button single-entry-button"
-              href="https://www.elportaldemusica.es/site/more-listened"
-              >Ver lista completa</a
-            >
+           
           </div>
         </section>
       </div>
