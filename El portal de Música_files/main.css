@@ -529,7 +529,7 @@ footer a:hover {
 #image-overlay {
   height: 305px;
   /*background-image: url('../images/bg_header.png');*/
-  background-image: url(/images/bg_header.jpg); /*Se cambia la imagen por una funcional*/
+  background-image: url(https://auditoriobb.com/wp-content/uploads/2020/09/eventos-en-la-nueva-normalidad.jpg); /*Se cambia la imagen por una funcional*/
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
