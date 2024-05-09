@@ -3049,6 +3049,25 @@ i.fi {
 
 /** END Player **/
 
+/** info banda **/
+
+.Info-banda {
+  width: 50%;
+  padding: 10px;
+  margin: 30px auto; /* Alinea el div horizontalmente y añade margen superior e inferior */
+  background-color: #3186f5; 
+  border: none; 
+  display: flex; /* Usa flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.Info-banda .contenedor .texto{
+  background-color: #4bab27;
+}
+
+/** end info banda **/
+
 /** RATING **/
 
 .rating {

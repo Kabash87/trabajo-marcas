@@ -5,7 +5,7 @@
   id="eppiocemhmnlbhjplcgkofciiegomcon"></script>
 <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script>
 <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script>
-
+<script src="archives/informacion.js"></script>
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -154,8 +154,7 @@
 
 
               <p class="single-entry-album" title="La Leyenda Del Tiempo">
-                <a href="https://www.elportaldemusica.es/single/michel-camilo-tomatito-la-leyenda-del-tiempo">Perfect
-                  Night</a>
+                <a href="https://www.elportaldemusica.es/single/michel-camilo-tomatito-la-leyenda-del-tiempo">Perfect Night</a>
               </p>
               <p class="single-entry-author" title="Le sserafim">
                 <a href="https://www.elportaldemusica.es/single/michel-camilo-tomatito-la-leyenda-del-tiempo">Le
@@ -432,35 +431,58 @@
                     }
 
                     document.addEventListener("DOMContentLoaded", function () {
-                      // Obtener todos los elementos <li> con la clase "single-entry"
-                      var entradasIndividuales = document.querySelectorAll(".single-entry");
+  // Obtener todos los elementos <li> con la clase "single-entry"
+  var entradasIndividuales = document.querySelectorAll(".single-entry");
 
-                      // Iterar sobre cada elemento <li> con la clase "single-entry"
-                      entradasIndividuales.forEach(function (entrada) {
-                        // Agregar un evento de clic a cada elemento <li>
-                        entrada.addEventListener("click", function () {
-                          // Obtener la descripción del álbum y del autor dentro de este elemento <li> específico
-                          var descripcionAlbum = entrada.querySelector(".single-entry-album").textContent;
-                          var descripcionAutor = entrada.querySelector(".single-entry-author").textContent;
+  // Iterar sobre cada elemento <li> con la clase "single-entry"
+  entradasIndividuales.forEach(function (entrada) {
+    // Agregar un evento de clic a cada elemento <li>
+    entrada.addEventListener("click", function () {
+      // Obtener la descripción del álbum y del autor dentro de este elemento <li> específico
+      var descripcionAlbum = entrada.querySelector(".single-entry-album").textContent;
+      var descripcionAutor = entrada.querySelector(".single-entry-author").textContent;
 
-                          // Obtener la URL de la imagen de fondo
-                          var imageUrl = entrada.querySelector(".single-entry-image-wrapper .single-entry-image").style.backgroundImage;
-                          // Limpiar la URL de la imagen para obtener solo la URL
-                          imageUrl = imageUrl.replace('url("', "").replace('")', "");
+      // Obtener la URL de la imagen de fondo
+      var imageUrl = entrada.querySelector(".single-entry-image-wrapper .single-entry-image").style.backgroundImage;
+      // Limpiar la URL de la imagen para obtener solo la URL
+      imageUrl = imageUrl.replace('url("', "").replace('")', "");
 
-                          // Actualizar el contenido de <h4> y <p> con los nuevos valores
-                          var h4Element = document.querySelector(".info-song h4");
-                          var pElement = document.querySelector(".info-song p");
-                          var imagenElement = document.querySelector(".content-player .imagen img");
+      // Actualizar el contenido de <h4> y <p> con los nuevos valores
+      var h4Element = document.querySelector(".info-song h4");
+      var pElement = document.querySelector(".info-song p");
+      var imagenElement = document.querySelector(".content-player .imagen img");
 
-                          h4Element.textContent = descripcionAlbum;
-                          pElement.textContent = descripcionAutor;
-                          imagenElement.src = imageUrl;
+      h4Element.textContent = descripcionAlbum;
+      pElement.textContent = descripcionAutor;
+      imagenElement.src = imageUrl;
 
-                          // También puedes hacer otras cosas con estos valores, como cambiar la imagen del reproductor, etc.
-                        });
-                      });
-                    });
+      // También puedes hacer otras cosas con estos valores, como cambiar la imagen del reproductor, etc.
+
+      // Buscar la información en el archivo "informacion.js"
+      var nombreCancion = descripcionAlbum.trim(); // Eliminar espacios en blanco al principio y al final
+      var infoCancion = info.find(function (cancion) {
+        return cancion.name === nombreCancion;
+      });
+
+      // Si se encontró información para la canción
+      if (infoCancion) {
+        // Actualizar el contenido HTML según los nuevos valores
+        var infoBanda = document.querySelector(".Info-banda");
+        infoBanda.innerHTML = `
+          <div class="contenedor">
+            <img src="${infoCancion.img}" alt="${infoCancion.artist}" class="img-info" />
+            <div class="info">
+              <ul>
+                <li class="titulo"><h1>${infoCancion.name}</h1></li>
+                <li class="autor">${infoCancion.artist}</li>
+                <li class="texto">${infoCancion.info}</li>
+              </ul>
+            </div>
+          </div>`;
+      }
+    });
+  });
+});
 
 
                     // Esperar a que el DOM esté completamente cargado
@@ -535,10 +557,19 @@
 
     </div>
 
-    <div class = "Info-banda" bis_skin_checked="1">
-      <div class = "imag-info"></div>
-      <div class = "info">
-        <p></p>
+    <div class="Info-banda">
+      <div class="contenedor">
+        <img src="11" alt="info" class="img-info" />
+        <div class="info">
+          <ul>
+
+            <li class="titulo"><h1>Título</h1></li>
+            <li class="autor">Autor</li>
+            <li class="texto">Texto</li>
+
+
+          </ul>
+        </div>
       </div>
     </div>
 
