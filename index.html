@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js"
+  id="eppiocemhmnlbhjplcgkofciiegomcon"></script>
+<script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css" id="alertifyCSS">
+    /* style.css */
+  </style>
+  <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+  <!-- End Cookie Consent plugin -->
+  <link rel="icon" href="archives/hatsunemiku.ico" type="image/x-icon">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="csrf-param" content="_SEC-EPDM" />
+  <meta name="csrf-token"
+    content="HQW6e9WQUaoFubmgy2CrJnQR2yX8c0hk2CXvgRawje5XdOo45NNl8H3A09alVc9WIye6Y6o3IwKpbILsWeG7jQ==" />
+  <title>El portal de Música</title>
+  <meta name="description" content="LISTAS OFICIALES DE VENTAS DE MUSICA de ESPAÑA" />
+  <meta name="author" content="El portal de Música" />
+  <meta name="publisher" content="El portal de Música" />
+  <link href="./El portal de Música_files/font-awesome.min.css" rel="stylesheet" />
+  <link href="./El portal de Música_files/bootstrap.css" rel="stylesheet" />
+  <link href="./El portal de Música_files/jquery.rateyo.min.css" rel="stylesheet" />
+  <link href="./El portal de Música_files/alertify.css" rel="stylesheet" />
+  <link href="./El portal de Música_files/jquery-ui.css" rel="stylesheet" />
+  <link href="./El portal de Música_files/cookieconsent.css" rel="stylesheet" />
+  <link href="./El portal de Música_files/site.css" rel="stylesheet" />
+  <link href="./El portal de Música_files/main.css" rel="stylesheet" />
+  <script src="./El portal de Música_files/jquery.js.descarga"></script>
+  <script bis_use="true" type="text/javascript" charset="utf-8"
+    data-bis-config='["facebook.com/","twitter.com/","youtube-nocookie.com/embed/","//vk.com/","//www.vk.com/","//linkedin.com/","//www.linkedin.com/","//instagram.com/","//www.instagram.com/","//www.google.com/recaptcha/api2/","//hangouts.google.com/webchat/","//www.google.com/calendar/","//www.google.com/maps/embed","spotify.com/","soundcloud.com/","//player.vimeo.com/","//disqus.com/","//tgwidget.com/","//js.driftt.com/","friends2follow.com","/widget","login","//video.bigmir.net/","blogger.com","//smartlock.google.com/","//keep.google.com/","/web.tolstoycomments.com/","moz-extension://","chrome-extension://","/auth/","//analytics.google.com/","adclarity.com","paddle.com/checkout","hcaptcha.com","recaptcha.net","2captcha.com","accounts.google.com","www.google.com/shopping/customerreviews","buy.tinypass.com","gstatic.com","secureir.ebaystatic.com","docs.google.com","contacts.google.com","github.com","mail.google.com","chat.google.com","audio.xpleer.com","keepa.com","static.xx.fbcdn.net","sas.selleramp.com","1plus1.video","console.googletagservices.com"]'
+    src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executers/vi-tr.js"></script>
+
+  <script async="" src="./El portal de Música_files/js"></script>
+</head>
+
+<body
+  bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjE0Iiwic2NvcmUiOjIwMDE0fV0=">
+  <header>
+    <div class="header-navbar" bis_skin_checked="1">
+      <div class="container" bis_skin_checked="1">
+        <div class="header-logo col-xs-12 col-sm-3" bis_skin_checked="1">
+          <a class="header-logo-href" href="#"><img class="header-logo-img"
+              src="./El portal de Música_files/epdm_logo.png" alt="El portal de Música"
+              title="El portal de Música" /></a>
+        </div>
+        <div class="header-nav col-xs-12 col-sm-9 text-right no-padding" bis_skin_checked="1">
+          <ul class="header-nav-list">
+            <li class="header-nav-list-entry selected">
+              <a href="#">NOVEDADES</a>
+            </li>
+            <li class="header-nav-list-entry">
+              <a href="#">CERTIFICADOS</a>
+            </li>
+            <li class="header-nav-list-entry">
+              <a href="#">LISTAS</a>
+            </li>
+            <li class="header-nav-list-entry separator hidden-xs"></li>
+            <li class="header-nav-list-entry light">
+              <a href="/login/Login.html"><span class="login"></span>Inicia sesión</a>
+            </li>
+
+            <li class="header-nav-list-entry light hidden-xs">
+              <a href="/signup/Signup.html"><span class="login"></span>Regístrate</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="content" bis_skin_checked="1">
+    <div id="nav-overlay" class="visible-xs" bis_skin_checked="1">
+      <ul class="nav-overlay-list">
+        <li class="nav-overlay-list-entry">
+          <div class="nav-search-field" bis_skin_checked="1">
+            <form id="w0" class="responsive" action="https://www.elportaldemusica.es/site/search" method="get">
+              <img id="nav-search-input" class="nav-overlay-list-entry-icon"
+                src="./El portal de Música_files/magnify-nav.svg" alt="" />
+              <input type="text" id="searchBoxNav" class="nav-search-field-input search-field-input empty" name="term"
+                data-placeholder="Buscar" />
+              <img id="nav-search-close" class="nav-overlay-list-entry-icon close-nav-search"
+                src="./El portal de Música_files/close_white.svg" alt="" />
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="home" bis_skin_checked="1">
+      <section id="image-overlay">
+        <div class="container-fluid text-center" bis_skin_checked="1">
+          <div class="image-header-title col-xs-12" bis_skin_checked="1" ">
+            <h2 style="font-family: Helvetica; font-weight: 400; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">EL PORTAL DE</h2>
+            <h1 style="font-family: Helvetica; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">MUSICA</h1>
+          </div>
+          <div class="image-header-search col-xs-12" bis_skin_checked="1">
+            <div class="image-header-search-input search-field col-xs-offset-4 col-xs-4 hidden-xs no-padding"
+              bis_skin_checked="1">
+              <div class="" bis_skin_checked="1">
+                <form id="w1" class="responsive" action="https://www.elportaldemusica.es/site/search" method="get"
+                  style="margin-top: 6px">
+                  <img class="search-field-icon" src="./El portal de Música_files/magnify.svg" alt="" />
+                  <input type="text" id="searchBox" class="search-field-input empty" name="term" placeholder="Buscar" />
+                  <input type="hidden" id="publicationssearch-type_search" class="type-search" name="filter"
+                    value="song" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="lo-ultimo">
+        <div class="container" bis_skin_checked="1">
+          <div class="row" bis_skin_checked="1">
+            <div class="col-sm-12" bis_skin_checked="1">
+              <a href="https://www.elportaldemusica.es/site/last">
+                <h2 class="section-title center">
+                  lo<strong>último</strong>
+                </h2>
+              </a>
+            </div>
+          </div>
+          <div class="bienvenida">
+            <h2 id="bienvenida" style="display: none; font-family: Helvetica; font-weight: 600;"></h2>
+            <a href="index.html"><button id="Logout-button" style="margin-bottom: 50px; display: none;">Cerrar Sesion</button></a>
+          </div>
+          <ul id="lo-ultimo-list" class="section-list">
+            <!--Perfect Night-->
+            <li class="single-entry">
+
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" data-ll-status="loaded" style="
+                        background-image: url('https://image.bugsm.co.kr/album/images/500/40924/4092452.jpg');
+                      " bis_skin_checked="1">
+                  <img src="https://image.bugsm.co.kr/album/images/500/40924/4092452.jpg" alt="imagen 1" width="100%"
+                    class="cancion" data-src="archives/audio-perfectnight.mp3"
+                    data-video="archives/video-perfectnight.mp4" style="cursor: pointer;">
+                </div>
+              </div>
+              <p class="single-entry-album" title="Perfect Night">
+                <a href="#">Perfect Night</a>
+              </p>
+              <p class="single-entry-author" title="Le sserafim">
+                <a href="#">Le Sserafim</a>
+              </p>
+              <p class="single-entry-genre" title="K-POP">K-POP</p>
+            </li>
+
+            <!--Cupid KPOP-->
+            <li class="single-entry">
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" alt="Cancion 2" data-ll-status="loaded"
+                  style="
+                        background-image: url('https://i1.sndcdn.com/artworks-owyfYPKMmoRDDqVw-Uia86Q-t500x500.jpg');
+                      " bis_skin_checked="1">
+                  <img src="https://i1.sndcdn.com/artworks-owyfYPKMmoRDDqVw-Uia86Q-t500x500.jpg" alt="imagen 2"
+                    width="100%" class="cancion" data-src="archives/audio-cupidfifty.mp3"
+                    data-video="archives/video-cupidfifty.mp4" style="cursor: pointer;">
+                </div>
+              </div>
+              <p class="single-entry-album" title="Cupid">
+              <a href="#">Cupid</a> 
+              </p>
+              <p class="single-entry-author" title="Fifty Fifty">
+               <a href="#">Fifty Fifty</a> 
+              </p>
+              <p class="single-entry-genre" title="K-POP">
+                K-POP
+              </p>
+            </li>
+            <!--BREED NIRVANA VIVA EL ROCK-->
+            <li class="single-entry">
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" data-ll-status="loaded"
+                  style="background-image: url('https://i.scdn.co/image/ab67616d0000b273e175a19e530c898d167d39bf');"
+                  bis_skin_checked="1">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273e175a19e530c898d167d39bf" alt="Breed Nirvana"
+                    width="100%" class="cancion" data-src="archives/audio-breed.mp3"
+                    data-video="archives/video-breed.mp4" style="cursor: pointer;">
+                </div>
+              </div>
+              <p class="single-entry-album" title="Breed">
+                <a href="#">Breed</a>
+              </p>
+              <p class="single-entry-author" title="NIRVANA">
+                <a href="#">NIRVANA</a>
+              </p>
+              <p class="single-entry-genre" title="ROCK">ROCK</p>
+            </li>
+            <!-- Test Drive-Joji -->
+            <li class="single-entry">
+                <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                  <div class="lazy single-entry-image item-img-cover loaded" data-ll-status="loaded"
+                    style="background-image: url('https://akamai.sscdn.co/letras/360x360/albuns/a/8/2/9/668321540489569.jpg');"
+                    bis_skin_checked="1">
+                    <img
+                      src="https://akamai.sscdn.co/letras/360x360/albuns/a/8/2/9/668321540489569.jpg"
+                      alt="Test Drive" width="100%" class="cancion" data-src="archives/audio-testdrive.mp3"
+                      data-video="archives/video-testdrive.mp4" style="cursor: pointer;">
+                  </div>
+                </div>
+              </a>
+              <p class="single-entry-album" title="Test Drive">
+                <a href="#">Test Drive</a>
+              </p>
+              <p class="single-entry-author" title="Joji">
+                <a href="#">Joji</a>
+              </p>
+              <p class="single-entry-genre" title="POP">POP</p>
+            </li>
+            <!-- LOSER -->
+            <li class="single-entry">
+                <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                  <div class="lazy single-entry-image item-img-cover loaded" data-ll-status="loaded"
+                    style="background-image: url('https://i1.sndcdn.com/artworks-0caTaEmVyOOBzsKw-GWU8qg-t500x500.jpg');"
+                    bis_skin_checked="1">
+                    <img
+                      src="https://i1.sndcdn.com/artworks-0caTaEmVyOOBzsKw-GWU8qg-t500x500.jpg"
+                      alt="Tu i Jo" width="100%" class="cancion" data-src="archives/audio-LOSER.mp3"
+                      data-video="archives/video-LOSER.mp4" style="cursor: pointer;">
+                  </div>
+                </div>
+              </a>
+              <p class="single-entry-album" title="LOSER">
+                <a href="#">LOSER</a>
+              </p>
+              <p class="single-entry-author" title="Kenshi Yonezu">
+                <a href="#">Kenshi Yonezu</a>
+              </p>
+              <p class="single-entry-genre" title="Jpop">Jpop</p>
+            </li>
+            <!-- i really want to stay at your house -->
+            <li class="single-entry">
+                <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                  <div class="lazy single-entry-image item-img-cover loaded" data-ll-status="loaded"
+                    style="background-image: url('https://m.media-amazon.com/images/I/51EyvyINAxL._UXNaN_FMjpg_QL85_.jpg');"
+                    bis_skin_checked="1">
+                    <img
+                      src="https://m.media-amazon.com/images/I/51EyvyINAxL._UXNaN_FMjpg_QL85_.jpg"
+                      alt="Jaleo" width="100%" class="cancion" data-src="archives/audio-Cyberpunk.mp3"
+                      data-video="archives/video-Cyberpunk.mp4" style="cursor: pointer;">
+                  </div>
+                </div>
+              </a>
+              <p class="single-entry-album" title="i really want to stay at your house">
+                <a href="#">i really want to stay at your house</a>
+              </p>
+              <p class="single-entry-author" title="Rosa Walton">
+                <a href="#">Rosa Walton</a>
+              </p>
+              <p class="single-entry-genre" title="Synthpop">	Synthpop</p>
+            </li>
+            <!-- 123 -->
+            <li class="single-entry">
+                <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                  <div class="lazy single-entry-image item-img-cover loaded" data-ll-status="loaded"
+                    style="background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/46/460538d39d3f7c285cedfe0972172f2e.jpeg');"
+                    bis_skin_checked="1">
+                    <img
+                      src="https://elportaldemusica.es/media/gallery_thumbnails/46/460538d39d3f7c285cedfe0972172f2e.jpeg"
+                      alt="123" width="100%" class="cancion" data-src="archives/audio-123.mp3"
+                      data-video="archives/video-123.mp4" style="cursor: pointer;">
+                  </div>
+                </div>
+              </a>
+              <p class="single-entry-album" title="123">
+                <a href="#">123</a>
+              </p>
+              <p class="single-entry-author" title="Turbotronic">
+                <a href="#">Turbotronic</a>
+              </p>
+              <p class="single-entry-genre" title="MÚSICA ELECTRÓNICA">MÚSICA ELECTRÓNICA</p>
+            </li>
+            <!-- El Mercado -->
+            <li class="single-entry">
+                <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                  <div class="lazy single-entry-image item-img-cover loaded" data-ll-status="loaded"
+                    style="background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/71/71db8f413c257ebe93045e2f55a6768f.jpeg');"
+                    bis_skin_checked="1">
+                    <img
+                      src="https://elportaldemusica.es/media/gallery_thumbnails/71/71db8f413c257ebe93045e2f55a6768f.jpeg"
+                      alt="El Mercado" width="100%" class="cancion" data-src="archives/audio-El_Mercado.mp3"
+                      data-video="archives/video-El_mercado.mp4" style="cursor: pointer;">
+                  </div>
+                </div>
+              </a>
+              <p class="single-entry-album" title="El Mercado">
+                <a href="#">El Mercado</a>
+              </p>
+              <p class="single-entry-author" title="Doña Manteca">
+                <a href="#">Doña Manteca</a>
+              </p>
+              <p class="single-entry-genre" title="FOLK / MÚSICAS DEL MUNDO">FOLK / MÚSICAS DEL MUNDO</p>
+            </li>
+            <!-- countach -->
+            <li class="single-entry">
+                <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                  <div class="lazy single-entry-image item-img-cover loaded" data-ll-status="loaded"
+                    style="background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/b6/b68649017529f0005c87a2ac816df47a.jpeg');"
+                    bis_skin_checked="1">
+                    <img
+                      src="https://elportaldemusica.es/media/gallery_thumbnails/b6/b68649017529f0005c87a2ac816df47a.jpeg"
+                      alt="countach" width="100%" class="cancion" data-src="archives/audio-countach.mp3"
+                      data-video="archives/video-countach.mp4" style="cursor: pointer;">
+                  </div>
+                </div>
+              </a>
+              <p class="single-entry-album" title="countach">
+                <a href="#">countach</a>
+              </p>
+              <p class="single-entry-author" title="thom archi">
+                <a href="#">thom archi</a>
+              </p>
+              <p class="single-entry-genre" title="HIPHOP">HIPHOP</p>
+            </li>
+            <!-- Sci fi -->
+            <li class="single-entry">
+                <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                  <div class="lazy single-entry-image item-img-cover loaded" data-ll-status="loaded"
+                    style="background-image: url('https://media.pitchfork.com/photos/648c5af7693ba71b769db68c/master/pass/Tainy-Data.jpg');"
+                    bis_skin_checked="1">
+                    <img
+                      src="https://www.traplyrics.com/wp-content/uploads/2023/06/si-preguntas-por-mi-Lyrics-In-English-Translation.jpg"
+                      alt="Sci-Fi" width="100%" class="cancion"
+                      data-src="archives/audio-scifi.mp3" data-video="archives/video-scifi.mp4"
+                      style="cursor: pointer;">
+                  </div>
+                </div>
+              </a>
+              <p class="single-entry-album" title="Sci fi">
+                <a href="#">Sci fi</a>
+              </p>
+              <p class="single-entry-author" title="Tainy">
+                <a href="#">Tainy</a>
+              </p>
+              <p class="single-entry-genre" title="MÚSICA ELECTRÓNICA">MÚSICA ELECTRÓNICA</p>
+            </li>
+          </ul>
+      </section>
+      <!--Parte del reproductor-->
+      <div class="main-block" bis_skin_checked="1">
+        <div class="row" bis_skin_checked="1">
+          <div class="col-xs-12 col-sm-5 col-sm-offset-1 content-video" bis_skin_checked="1">
+            <h2 class="title" style="color: white; font-family: Helvetica, sans-serif;" bis_skin_checked="1">Videoclip
+            </h2>
+            <div class="video" style="overflow: auto" bis_skin_checked="1">
+              <video src="archives/video-perfectnight.mp4" class="video" id="video" autoplay width="100%" loop
+                muted></video>
+            </div>
+          </div>
+
+          <!--REPRODUCTOR DE MUSICA-->
+          <div class="col-xs-12 col-sm-5 view-details" bis_skin_checked="1">
+            <div class="details" bis_skin_checked="1">
+              <div class="content-player" bis_skin_checked="1">
+                <!--Player en resumen-->
+                <div class="player" style="position: relative" bis_skin_checked="1">
+                  <div class="imagen">
+                    <img src="https://image.bugsm.co.kr/album/images/500/40924/4092452.jpg" alt="Perfect Night"
+                      class="song-img" id="imagen-cancion" />
+                  </div>
+                  <audio id="song" class="musica-audio" src="archives/audio-perfectnight.mp3"></audio>
+                  <div class="info-song">
+                    <h4 id="nombre-cancion">Perfect Night</h4>
+                    <p id="nombre-banda">Sserafim</p>
+                  </div>
+
+                  <input type="range" value="0" id="progreso" />
+                  <span id="current-time" class="now">00:00</span>
+                  <span id="song-duration" class="duration">00:00</span>
+                  <div class="controls">
+                    <div id="boton-retroceder"><i class="fa-solid fa-backward"></i></div>
+                    <div id="boton-reproducir" onclick="playPause()"><i class="fa-solid fa-pause" id="ctrlIcon"></i></div>
+                    <div id="boton-avanzar"><i class="fa-solid fa-forward"></i></div>
+                  </div>
+
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fin del reproductor-->
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="Info-banda">
+      <div class="contenedor">
+        <img src="archives/900-x-600-featured-image-blogs-2-1-1670302216240.webp" alt="info" class="img-info" />
+        <div class="info">
+          <ul>
+
+            <li class="titulo"><h1>Perfect Night</h1></li>
+            <li class="autor">Le Sserafim</li>
+            <li class="texto">Nombre:
+              LE SSERAFIM (Internacional)
+              르세라핌 (leuselapim) en Corea.
+              ル セラフィム (ru serafimu) en Japón.
+              ¿Por qué?: Su nombre está creado por el anagrama de 'I'm Fearless', e implica confianza en sí mismo y una fuerte voluntad de seguir adelante sin dejarse llevar por la mirada del mundo. LE SSERAFIM proviene originalmente del término "LES SERAPHIM", mientras que Seraphim es un ser celestial de 6 alas.
+              Origen: Corea del Sur
+              Número de integrantes: 5 chicas (2 coreanas, 2 japonesas y 1 estadounidense)
+              Número de ex-integrantes: 1 chica (coreana)
+              Debut:
+              Corea: 02 de Mayo de 2022
+              Japón: 25 de Enero de 2023
+              Nombre fanclub oficial: FEARNOT
+              ¿Por qué?: Es un homónimo para “florecer” en coreano, lleva el significado de que LE SSERAFIM marcha hacia adelante sin miedo y los fans que “no temen” amar y apoyar a LE SSERAFIM se unen para “florecer” en cada nuevo momento.
+              Color Oficial: FEARLESS BLUE (PANTONE 7453C)
+              ¿Por qué?: interpreta la temperatura más alta de una estrella. Pretende simbolizar las características libres, apasionadas y valientes de LE SSERAFIM y FEARNOT.
+              Género: K-Pop
+              Agencia:
+              Source Music (Corea del Sur)
+              Sub-Agencia: HYBE
+              EMI Records (Japón)
+              Sub-Agencia: Universal Music Japan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!--Parte de Javascript-->
+    <script> console.log("Hola david como estas")</script>
+    <script src="js/informacion.js"></script>
+    <script src="js/script.js"></script>
+
+    <section id="tus-listas">
+      <div class="container" bis_skin_checked="1">
+        <h2 class="section-title">tus<strong>listas</strong></h2>
+        <div class="col-xs-12 col-sm-6 tuslistas-entry double-height relative" bis_skin_checked="1">
+          <div id="tuslistas-top100canciones" class="lazy tuslistas-entry-content clearfix img-cover week-albums loaded"
+            data-ll-status="loaded" style="
+                  background-image: url('https://elportaldemusica.es/images/top_100_albums.jpg');
+                " bis_skin_checked="1">
+            <p class="tuslistas-entry-content-title">
+              Top 100 <br /><br />
+              <strong>álbumes</strong>
+            </p>
+            <p class="tuslistas-entry-content-description">
+              Todos los martes actualizamos nuestras listas para que siempre
+              estés al día de las novedades
+            </p>
+            <a class="clear-button inverted" href="https://www.elportaldemusica.es/lists/top-100-albums/2024/16">Ver
+              la lista completa!</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 no-padding" bis_skin_checked="1">
+          <div class="col-xs-6 tuslistas-entry single" bis_skin_checked="1">
+            <div id="tuslistas-topalbumes" class="tuslistas-entry-content text-center clearfix" bis_skin_checked="1">
+              <a class="lazy tuslistas-entry-content-href img-cover week-songs loaded"
+                href="https://www.elportaldemusica.es/lists/top-100-canciones/2024/16" data-ll-status="loaded" style="
+                      background-image: url('https://elportaldemusica.es/images/top_100_canciones.jpg');
+                    ">
+                <p class="tuslistas-entry-content-title">
+                  Top 100 Canciones
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-6 tuslistas-entry single" bis_skin_checked="1">
+            <div id="tuslistas-topradios" class="tuslistas-entry-content text-center clearfix" bis_skin_checked="1">
+              <a class="lazy tuslistas-entry-content-href img-cover week-radio loaded"
+                href="https://www.elportaldemusica.es/lists/top-50-radios/2024/16" data-ll-status="loaded" style="
+                      background-image: url('https://elportaldemusica.es/images/top_50_radio.jpg');
+                    ">
+                <p class="tuslistas-entry-content-title">Top 50 Radios</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-6 tuslistas-entry single" bis_skin_checked="1">
+            <div id="tuslistas-topcanciones2016" class="tuslistas-entry-content text-center clearfix"
+              bis_skin_checked="1">
+              <a class="lazy tuslistas-entry-content-href img-cover year-songs loaded"
+                href="https://www.elportaldemusica.es/lists/top-100-canciones/2023" data-ll-status="loaded" style="
+                      background-image: url('https://elportaldemusica.es/images/top_100_canciones_guitarra.jpg');
+                    ">
+                <p class="tuslistas-entry-content-title">
+                  Top 100 Canciones 2023
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-6 tuslistas-entry single" bis_skin_checked="1">
+            <div id="tuslistas-topalbumes2016" class="tuslistas-entry-content text-center clearfix"
+              bis_skin_checked="1">
+              <a class="lazy tuslistas-entry-content-href img-cover year-albums loaded"
+                href="https://www.elportaldemusica.es/lists/top-100-albums/2023" data-ll-status="loaded" style="
+                      background-image: url('https://elportaldemusica.es/images/top_100_albums_anual.jpg');
+                    ">
+                <p class="tuslistas-entry-content-title">
+                  Top 100 Álbumes 2023
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mas-escuchado">
+      <div class="container" bis_skin_checked="1">
+        <div class="row" bis_skin_checked="1">
+          <div class="col-sm-12" bis_skin_checked="1">
+            <a href="https://www.elportaldemusica.es/site/more-listened">
+              <h2 class="section-title center">
+                más<strong>escuchado</strong>
+              </h2>
+            </a>
+          </div>
+        </div>
+        <ul id="mas-escuchado-list" class="section-list">
+          <li class="single-entry">
+            <a href="https://www.elportaldemusica.es/single/martin-urrutia-rompeolas">
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" bis_skin_checked="1" data-ll-status="loaded"
+                  style="
+                        background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/c9/c92c833f8fc1590169c0e06f85b4295e.jpg');
+                      "></div>
+              </div>
+            </a>
+
+            <p class="single-entry-album" title="ROMPEOLAS">
+              <a href="https://www.elportaldemusica.es/single/martin-urrutia-rompeolas">ROMPEOLAS</a>
+            </p>
+            <p class="single-entry-author" title="MARTIN URRUTIA">
+              <a href="https://www.elportaldemusica.es/single/martin-urrutia-rompeolas">MARTIN URRUTIA</a>
+            </p>
+            <p class="single-entry-genre" title="POP">POP</p>
+          </li>
+          <li class="single-entry">
+            <a href="https://www.elportaldemusica.es/single/shakira-punteria">
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" bis_skin_checked="1" data-ll-status="loaded"
+                  style="
+                        background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/22/22c248bce6a7b575d11c8d40ee9bd391.jpeg');
+                      "></div>
+              </div>
+            </a>
+
+            <p class="single-entry-album" title="Puntería">
+              <a href="https://www.elportaldemusica.es/single/shakira-punteria">Puntería</a>
+            </p>
+            <p class="single-entry-author" title="Shakira">
+              <a href="https://www.elportaldemusica.es/single/shakira-punteria">Shakira</a>
+            </p>
+            <p class="single-entry-genre" title="POP">POP</p>
+          </li>
+          <li class="single-entry">
+            <a href="https://www.elportaldemusica.es/single/lola-indigo-y-manuel-turizo-1000cosas">
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" bis_skin_checked="1" data-ll-status="loaded"
+                  style="
+                        background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/e4/e42870ecc3ad27b44d73795414cdae6b.jpeg');
+                      "></div>
+              </div>
+            </a>
+
+            <p class="single-entry-album" title="1000COSAS">
+              <a href="https://www.elportaldemusica.es/single/lola-indigo-y-manuel-turizo-1000cosas">1000COSAS</a>
+            </p>
+            <p class="single-entry-author" title="Lola Indigo Y  Manuel Turizo">
+              <a href="https://www.elportaldemusica.es/single/lola-indigo-y-manuel-turizo-1000cosas">Lola Indigo Y
+                Manuel Turizo</a>
+            </p>
+            <p class="single-entry-genre" title="URBANO">URBANO</p>
+          </li>
+          <li class="single-entry">
+            <a href="https://www.elportaldemusica.es/single/bustamante-el-dia-que-te-vayas">
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" bis_skin_checked="1" data-ll-status="loaded"
+                  style="
+                        background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/d0/d070b7700ac00684968024b0f632ec95.jpeg');
+                      "></div>
+              </div>
+            </a>
+
+            <p class="single-entry-album" title="El Día Que Te Vayas">
+              <a href="https://www.elportaldemusica.es/single/bustamante-el-dia-que-te-vayas">El Día Que Te Vayas</a>
+            </p>
+            <p class="single-entry-author" title="Bustamante">
+              <a href="https://www.elportaldemusica.es/single/bustamante-el-dia-que-te-vayas">Bustamante</a>
+            </p>
+            <p class="single-entry-genre" title="POP">POP</p>
+          </li>
+          <li class="single-entry">
+            <a href="https://www.elportaldemusica.es/single/ovy-on-the-drums-myke-towers-saiko-desataaa">
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" bis_skin_checked="1" data-ll-status="loaded"
+                  style="
+                        background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/7f/7ff7b42e85bdcf7b2b83895cab504c51.jpeg');
+                      "></div>
+              </div>
+            </a>
+
+            <p class="single-entry-album" title="Desataaa">
+              <a href="https://www.elportaldemusica.es/single/ovy-on-the-drums-myke-towers-saiko-desataaa">Desataaa</a>
+            </p>
+            <p class="single-entry-author" title="Ovy on the drums, Myke Towers, Saiko">
+              <a href="https://www.elportaldemusica.es/single/ovy-on-the-drums-myke-towers-saiko-desataaa">Ovy on the
+                drums, Myke Towers, Saiko</a>
+            </p>
+            <p class="single-entry-genre" title="LATINO">LATINO</p>
+          </li>
+          <li class="single-entry">
+            <a href="https://www.elportaldemusica.es/album/ariana-grande-eternal-sunshine-2">
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" bis_skin_checked="1" data-ll-status="loaded"
+                  style="
+                        background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/31/31b26058c265a2f0018c20796a58e3c8.jpg');
+                      "></div>
+              </div>
+            </a>
+
+            <p class="single-entry-album" title="ETERNAL SUNSHINE">
+              <a href="https://www.elportaldemusica.es/album/ariana-grande-eternal-sunshine-2">ETERNAL SUNSHINE</a>
+            </p>
+            <p class="single-entry-author" title="Ariana Grande">
+              <a href="https://www.elportaldemusica.es/album/ariana-grande-eternal-sunshine-2">Ariana Grande</a>
+            </p>
+            <p class="single-entry-genre" title="POP">POP</p>
+          </li>
+          <li class="single-entry">
+            <a href="https://www.elportaldemusica.es/album/estopa-estopia">
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" bis_skin_checked="1" data-ll-status="loaded"
+                  style="
+                        background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/dd/dd69f654ecd482d9455ec49967c76d32.jpg');
+                      "></div>
+              </div>
+            </a>
+
+            <p class="single-entry-album" title="ESTOPÍA">
+              <a href="https://www.elportaldemusica.es/album/estopa-estopia">ESTOPÍA</a>
+            </p>
+            <p class="single-entry-author" title="Estopa">
+              <a href="https://www.elportaldemusica.es/album/estopa-estopia">Estopa</a>
+            </p>
+            <p class="single-entry-genre" title="POP">POP</p>
+          </li>
+          <li class="single-entry">
+            <a href="https://www.elportaldemusica.es/single/jc-reyes-pedro-calderon-a-300">
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" bis_skin_checked="1" data-ll-status="loaded"
+                  style="
+                        background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/73/73ce7012a6a03f1ed77e47c16f01214f.jpg');
+                      "></div>
+              </div>
+            </a>
+
+            <p class="single-entry-album" title="A 300">
+              <a href="https://www.elportaldemusica.es/single/jc-reyes-pedro-calderon-a-300">A 300</a>
+            </p>
+            <p class="single-entry-author" title="JC REYES / PEDRO CALDERON">
+              <a href="https://www.elportaldemusica.es/single/jc-reyes-pedro-calderon-a-300">JC REYES / PEDRO
+                CALDERON</a>
+            </p>
+            <p class="single-entry-genre" title="HIPHOP">HIPHOP</p>
+          </li>
+          <li class="single-entry">
+            <a href="https://www.elportaldemusica.es/single/gonzy-xclusivo">
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" bis_skin_checked="1" data-ll-status="loaded"
+                  style="
+                        background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/f6/f6a226f8e0ea72f36cef95e93cd1f4ef.jpg');
+                      "></div>
+              </div>
+            </a>
+
+            <p class="single-entry-album" title="X&#39;CLUSIVO">
+              <a href="https://www.elportaldemusica.es/single/gonzy-xclusivo">X'CLUSIVO</a>
+            </p>
+            <p class="single-entry-author" title="GONZY">
+              <a href="https://www.elportaldemusica.es/single/gonzy-xclusivo">GONZY</a>
+            </p>
+            <p class="single-entry-genre" title="URBANO">URBANO</p>
+          </li>
+          <li class="single-entry">
+            <a href="https://www.elportaldemusica.es/single/estopa-ke-mas-nos-da">
+              <div class="single-entry-image-wrapper" bis_skin_checked="1">
+                <div class="lazy single-entry-image item-img-cover loaded" bis_skin_checked="1" data-ll-status="loaded"
+                  style="
+                        background-image: url('https://elportaldemusica.es/media/gallery_thumbnails/3c/3ca918a151e513ac046a74e808653f04.jpeg');
+                      "></div>
+              </div>
+            </a>
+
+            <p class="single-entry-album" title="Ké Más Nos Da">
+              <a href="https://www.elportaldemusica.es/single/estopa-ke-mas-nos-da">Ké Más Nos Da</a>
+            </p>
+            <p class="single-entry-author" title="Estopa">
+              <a href="https://www.elportaldemusica.es/single/estopa-ke-mas-nos-da">Estopa</a>
+            </p>
+            <p class="single-entry-genre" title="POP">POP</p>
+          </li>
+          <div class="clearfix" bis_skin_checked="1"></div>
+        </ul>
+
+      </div>
+    </section>
+  </div>
+  </div>
+
+  <div class="modal-social-links" bis_skin_checked="1">
+    <ul class="footer-section-socialmedia">
+      <!--
+ -->
+      <li id="fb" class="footer-section-socialmedia-entry">
+        <a href="https://www.facebook.com/elportaldemusica" target="_blank"><img src="images/redes/face.png" alt=""
+            style="width: 100%" /></a>
+      </li>
+      <!--
+ -->
+      <li id="sp" class="footer-section-socialmedia-entry">
+        <a href="https://open.spotify.com/user/elportaldemusica" target="_blank"><img
+            src="/images/redes/klipartz.com.png" alt="" style="width: 100%" /></a>
+      </li>
+      <!--
+ -->
+      <li id="tw" class="footer-section-socialmedia-entry">
+        <a href="https://twitter.com/portaldemusica" target="_blank"><img src="images/redes/twitter.png" alt=""
+            style="width: 100%" /></a>
+      </li>
+      <!--
+ -->
+      <li id="ins" class="footer-section-socialmedia-entry">
+        <a href="https://www.instagram.com/elportaldemusica" target="_blank" style="border-radius: 0"><img
+            src="./El portal de Música_files/instagram_2017.png" alt="" style="width: 100%" /></a>
+      </li>
+      <!--
+   -->
+      <li id="yt" class="footer-section-socialmedia-entry rss">
+        <a href="https://www.elportaldemusica.es/rss" target="_blank"><img src="images/redes/rss.png" alt=""
+            style="width: 100%" /></i></a>
+      </li>
+      <!--  -->
+    </ul>
+  </div>
+
+  <footer>
+    <div class="container" bis_skin_checked="1">
+      <div class="footer-section col-xs-12 text-center" bis_skin_checked="1">
+        <ul>
+          <li class="footer-section-links-list col-xs-12 col-sm-4">
+            <ul>
+              <li class="footer-section-title">
+                <p>INFORMACIÓN</p>
+              </li>
+              <li class="footer-section-link">
+                <a href="https://www.elportaldemusica.es/site/politica-privacidad">Política de Privacidad</a>
+              </li>
+              <li class="footer-section-link">
+                <a href="https://www.elportaldemusica.es/site/aviso-legal">Aviso Legal</a>
+              </li>
+              <li class="footer-section-link">
+                <a href="https://www.elportaldemusica.es/site/cookies">Política de Cookies</a>
+              </li>
+            </ul>
+          </li>
+          <!-- 
+                            -->
+          <li class="footer-section-links-list col-xs-12 col-sm-4">
+            <ul>
+              <li class="footer-section-title">
+                <p>USUARIO</p>
+              </li>
+              <li class="footer-section-link">
+                <a href="#">Registrate</a>
+              </li>
+              <li class="footer-section-link">
+                <a href="login/Login.html">Inicia sesión</a>
+              </li>
+              <li class="footer-section-link">
+                <a href="https://www.elportaldemusica.es/site/request-password-reset">¿Olvidaste la contraseña?</a>
+              </li>
+            </ul>
+          </li>
+          <!--  
+                            -->
+          <li class="footer-section-links-list col-xs-12 col-sm-4">
+            <ul>
+              <li class="footer-section-title">
+                <p>INFORMACIÓN</p>
+              </li>
+              <li class="footer-section-link">
+                <a href="https://www.elportaldemusica.es/site/last">Últimas novedades</a>
+              </li>
+              <li class="footer-section-link">
+                <a href="https://www.elportaldemusica.es/lists/top-100-albums/2024/16">Top 100 Álbumes</a>
+              </li>
+              <li class="footer-section-link">
+                <a href="https://www.elportaldemusica.es/lists/top-100-canciones/2024/16">Top 100 Canciones</a>
+              </li>
+              <li class="footer-section-link">
+                <a href="https://www.elportaldemusica.es/lists/top-100-vinilos/2024/16">Top 100 Vinilos</a>
+              </li>
+              <li class="footer-section-link">
+                <a href="https://www.elportaldemusica.es/lists/top-50-radios/2024/16">Top 50 Radios</a>
+              </li>
+              <li class="footer-section-link">
+                <a href="https://www.elportaldemusica.es/lists">Listas Actuales</a>
+              </li>
+              <li class="footer-section-link"><br /></li>
+              <li class="footer-section-link languages-selector">
+                <a class="flag en-US" href="https://www.elportaldemusica.es/site/index?language=en-US">English</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section col-xs-12 text-center" bis_skin_checked="1">
+        <p class="footer-section-socialmedia-title">Síguenos en:</p>
+        <ul class="footer-section-socialmedia">
+          <!--
+ -->
+          <li id="fb" class="footer-section-socialmedia-entry">
+            <a href="https://www.facebook.com/elportaldemusica" target="_blank"><img src="images/redes/face.png" alt=""
+                style="width: 100%" /></a>
+          </li>
+          <!--
+ -->
+          <li id="sp" class="footer-section-socialmedia-entry">
+            <a href="https://open.spotify.com/user/elportaldemusica" target="_blank"><img
+                src="images/redes/klipartz.com.png" alt="" style="width: 100%" /></a>
+          </li>
+          <!--
+ -->
+          <li id="tw" class="footer-section-socialmedia-entry">
+            <a href="https://twitter.com/portaldemusica" target="_blank"><img src="images/redes/twitter.png" alt=""
+                style="width: 100%" /></a>
+          </li>
+          <!--
+ -->
+          <li id="ins" class="footer-section-socialmedia-entry">
+            <a href="https://www.instagram.com/elportaldemusica" target="_blank" style="border-radius: 0"><img
+                src="./El portal de Música_files/instagram_2017.png" alt="" style="width: 100%" /></a>
+          </li>
+          <!--
+   -->
+        </ul>
+      </div>
+      <div class="footer-section col-xs-12 text-center" bis_skin_checked="1">
+        <div class="text-center" bis_skin_checked="1">
+          <div class="footer-section-gob" bis_skin_checked="1">
+            <img id="mecd" src="./El portal de Música_files/gob_espana_mecd.jpg"
+              alt="Ministerio de educación, cultura y deporte, Gobierno de España"
+              title="Ministerio de educación, cultura y deporte, Gobierno de España" />
+            <div style="color: white; margin-top: 10px" bis_skin_checked="1">
+              Proyecto financiado por el INAEM, Ministerio de Cultura y
+              Deporte
+            </div>
+          </div>
+        </div>
+        <div class="text-center" bis_skin_checked="1">
+          <div class="footer-section-gob" bis_skin_checked="1">
+            <img src="./El portal de Música_files/financiado_logos.png"
+              alt="Plan de recuperación, transformación y resiliencia"
+              title="Plan de recuperación, transformación y resiliencia" style="width: 90%" />
+          </div>
+        </div>
+        <p class="footer-section-copyright">2024 © PROMUSICAE</p>
+      </div>
+    </div>
+
+    <div style="color: rgba(19, 19, 19, 1)" bis_skin_checked="1">
+      -: cu<br />IP: 10.10.1.132<br />EX-IP: 80.29.46.184<br />Frontal: Prod 4
+    </div>
+  </footer>
+
+  <script>
+    var currentConsents = JSON.parse(
+      '{"necessary":{"label":"Necesarias","checked":true,"disabled":true,"cookies":[{"name":"EPDMSESSID"},{"name":"_SEC-EPDM"},{"name":"ApplicationGatewayAffinityCORS"},{"name":"ApplicationGatewayAffinity"},{"name":"cookie_consent_status"}],"details":[{"title":"Cookie","description":"EPDMSESSID"},{"title":"Cookie","description":"_SEC-EPDM"},{"title":"Cookie","description":"ApplicationGatewayAffinityCORS"},{"title":"Cookie","description":"ApplicationGatewayAffinity"},{"title":"Cookie","description":"cookie_consent_status"}]},"statistics":{"checked":false,"label":"Anal\u00edtica","cookies":[{"name":"_ga"},{"name":"_gat","domain":"","path":"\/"},{"name":"_gid","domain":"","path":"\/"},{"name":"_gat_gtag_UA_27075944_1","domain":".elportaldemusica.es","path":"\/"},{"name":"_ga","domain":".elportaldemusica.es","path":"\/"},{"name":"_gat","domain":".elportaldemusica.es","path":"\/"},{"name":"_gid","domain":".elportaldemusica.es","path":"\/"}],"details":[{"title":"Google Analytics","description":"Crea datos anal\u00edticos y estad\u00edsticos"},{"title":"Cookie","description":"_ga, _gat, _gid, _gali"}]},"media":{"checked":false,"label":"Personalizaci\u00f3n","description":"Necesarias para visualizar los reproductores de m\u00fasica","cookies":[{"name":"_ga_S35RN5WNT2","domain":".spotify.com","path":"\/"},{"name":"_pin_unauth","domain":".spotify.com","path":"\/"},{"name":"sp_adid","domain":".spotify.com","path":"\/"},{"name":"_ga","domain":".spotify.com","path":"\/"},{"name":"OptanonAlertBoxClosed","domain":".spotify.com","path":"\/"},{"name":"sp_key","domain":".spotify.com","path":"\/"},{"name":"sp_t","domain":".spotify.com","path":"\/"},{"name":"OptanonConsent","domain":".spotify.com","path":"\/"},{"name":"spot","domain":".spotify.com","path":"\/"},{"name":"_scid","domain":".spotify.com","path":"\/"},{"name":"CONSENT","domain":".youtube.com","path":"\/"},{"name":"SID","domain":".youtube.com","path":"\/"},{"name":"PREF","domain":".youtube.com","path":"\/"},{"name":"APISID","domain":".youtube.com","path":"\/"},{"name":"SAPISID","domain":".youtube.com","path":"\/"},{"name":"__Secure-3PAPISID","domain":".google.com","path":"\/"},{"name":"__Secure-3PAPISID","domain":".youtube.com","path":"\/"},{"name":"SIDCC","domain":".youtube.com","path":"\/"},{"name":"SAPISID","domain":".google.com","path":"\/"},{"name":"APISID","domain":".google.com","path":"\/"},{"name":"SEARCH_SAMESITE","domain":".google.com","path":"\/"},{"name":"OTZ","domain":"www.google.com","path":"\/"},{"name":"SID","domain":".google.com","path":"\/"},{"name":"1P_JAR","domain":".google.com","path":"\/"},{"name":"SDVID","domain":"www.google.com","path":"\/"},{"name":"SIDCC","domain":".google.com","path":"\/"},{"name":"_ga","domain":".apis.google.com","path":"\/"},{"name":"__utma","domain":".deezer.com","path":"\/"},{"name":"__utmz","domain":".deezer.com","path":"\/"},{"name":"_abck","domain":".deezer.com","path":"\/"},{"name":"dssf","domain":".apple.com","path":"\/"},{"name":"aa_lastvisit","domain":".apple.com","path":"\/"},{"name":"xp_abc","domain":".apple.com","path":"\/"},{"name":"s_fid","domain":".apple.com","path":"\/"},{"name":"xp_ab","domain":".apple.com","path":"\/"},{"name":"xp_ci","domain":".apple.com","path":"\/"}],"details":[{"title":"youtube.com","description":"Reproductor de v\u00eddeo"},{"title":"deezer.com","description":"Reproductor de m\u00fasica"},{"title":"music.apple.com","description":"Reproductor de m\u00fasica"},{"title":"spotify.com","description":"Reproductor de m\u00fasica"}]}}'
+    );
+  </script>
+
+  <div class="cookie-consent-popup" bis_skin_checked="1">
+    <div class="cookie-consent-top-wrapper" bis_skin_checked="1">
+      <div class="cookie-consent-disclaimer" bis_skin_checked="1">
+        <p class="cookie-consent-message">
+          <span class="cookie-consent-text">
+            En
+            <a href="http://www.elportaldemusica.es/">www.elportaldemusica.es</a>
+            utilizamos cookies, propias y de terceros,
+            <strong>de personalización</strong> para mejorar la calidad del
+            producto o servicio ofrecido; <strong>de análisis</strong> para
+            medir la audiencia y analizar el comportamiento de los usuarios
+            Puede obtener más información en nuestra
+            <a href="https://www.elportaldemusica.es/site/cookies" target="blank">Política de Cookies.</a>
+
+            Ud. puede configurar las cookies a través del siguiente panel.
+            "Aceptar todas" o modificarlas de forma unitaria.
+          </span>
+          <a class="cookie-consent-link" href="https://www.elportaldemusica.es/site/cookies">Detalles de las Cookies</a>
+        </p>
+      </div>
+      <div class="cookie-consent-actions" bis_skin_checked="1">
+        <button class="cookie-consent-controls-toggle">Configurar</button>
+        <button class="cookie-consent-accept-all">Aceptar Todas</button>
+      </div>
+    </div>
+    <div class="cookie-consent-controls" bis_skin_checked="1">
+      <label for="necessary" class="cookie-consent-control">
+        <label class="switch">
+          <input type="checkbox" id="necessary" class="cookie-consent-checkbox" name="necessary" value="1" checked=""
+            disabled="" data-cc-consent="necessary" />
+          <span class="slider round"></span>
+        </label>
+
+        <span> Necesarias </span>
+      </label>
+      <label for="statistics" class="cookie-consent-control">
+        <label class="switch">
+          <input type="checkbox" id="statistics" class="cookie-consent-checkbox" name="statistics" value="1"
+            data-cc-consent="statistics" />
+          <span class="slider round"></span>
+        </label>
+
+        <span> Analítica </span>
+      </label>
+      <label for="media" class="cookie-consent-control">
+        <label class="switch">
+          <input type="checkbox" id="media" class="cookie-consent-checkbox" name="media" value="1"
+            data-cc-consent="media" />
+          <span class="slider round"></span>
+        </label>
+
+        <span> Personalización </span>
+      </label>
+      <button class="cookie-consent-save" data-cc-namespace="popup">
+        Guardar
+      </button>
+    </div>
+  </div>
+
+  <script src="./El portal de Música_files/yii.js.descarga"></script>
+  <script src="./El portal de Música_files/yii.activeForm.js.descarga"></script>
+  <script src="./El portal de Música_files/bootstrap.js.descarga"></script>
+  <script src="./El portal de Música_files/jquery.rateyo.min.js.descarga"></script>
+  <script src="./El portal de Música_files/alertify.js.descarga"></script>
+  <script src="./El portal de Música_files/jquery-ui.js.descarga"></script>
+  <script src="./El portal de Música_files/URI.min.js.descarga"></script>
+  <script src="./El portal de Música_files/lazyload.min.js.descarga"></script>
+  <script src="./El portal de Música_files/lazyload-init.js.descarga"></script>
+  <script src="./El portal de Música_files/nav-search.js.descarga"></script>
+  <script src="./El portal de Música_files/rating.js.descarga"></script>
+  <script src="./El portal de Música_files/cookie-consent.js.descarga"></script>
+  <script src="./El portal de Música_files/cookie-consent-init.js.descarga"></script>
+  <script src="./El portal de Música_files/utilities.js.descarga"></script>
+  <script src="./El portal de Música_files/sections.js.descarga"></script>
+  <script>
+    // Add section to sections to update
+    sectionsAdjustImages.push("#lo-ultimo");
+    // Add section to sections to update
+    sectionsAdjustImages.push("#mas-escuchado");
+    // Collapse header on scroll and keep it fixed
+    /*$(window).scroll(function(e){
+      var imageHeader = $(".header-image");
+      if($(this).scrollTop() > 200){
+          imageHeader.addClass("expand");
+    } else {
+          imageHeader.removeClass("expand");
+    }
+  });*/
+  </script>
+  <script>
+    jQuery(function ($) {
+      jQuery("#w0").yiiActiveForm([], []);
+      jQuery("#w1").yiiActiveForm([], []);
+    });
+  </script>
+</body>
+
+</html>

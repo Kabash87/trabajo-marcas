@@ -1,0 +1,79 @@
+.site-login .input,
+.site-signup .input {
+  max-width: 100%;
+  margin: 14px 5px;
+  width: calc(100%);
+}
+
+.site-login .input input,
+.site-signup .input input,
+.site-login .input select,
+.site-signup .input select {
+  padding: 10px;
+  color: #222;
+  font-size: 15px;
+  border-radius: 12px;
+  border-width: 1px;
+}
+
+.site-login .input select,
+.site-signup .input select {
+  z-index: 100;
+  color: #8b8c8b;
+}
+
+.site-login .input.input--filled select,
+.site-signup .input.input--filled select {
+  color: #222;
+}
+
+/*.site-login .input select option, .site-signup .input select option{
+	color:#222;
+}*/
+
+.site-login .input select option:first-child,
+.site-signup .input select option:first-child {
+  color: #8b8c8b;
+}
+
+.input__field--yoshiko {
+  background-color: #fff;
+}
+
+.input--filled .input__field--yoshiko {
+  /*border-color: #e35a00;*/
+  border-color: transparent;
+  background-color: #fff !important;
+}
+
+.input__field--yoshiko:focus {
+  /*border-color: #e35a00;*/
+  border-color: #555;
+  background-color: #fff !important;
+}
+
+.input__label-content--yoshiko::after {
+  /*color: #e35a00;*/
+  color: #555;
+}
+
+.input__label-content--yoshiko::after {
+  /*color: #e35a00;*/
+  color: #555;
+}
+
+.input__label-content--yoshiko::after,
+.input__label-content--yoshiko {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.input__label {
+  font-size: 14px;
+}
+
+section.content {
+  padding: 0;
+}

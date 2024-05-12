@@ -1,0 +1,11 @@
+var cookieConsent = new CookieConsent({
+  name: 'cookie_consent_status',
+  path: '/',
+  domain: '',
+  expiryDays: 365
+});
+
+window.cookieConsent.afterSave = function (cc) {
+  cookieConsent.clean(currentConsents);
+  window.location.reload()
+}

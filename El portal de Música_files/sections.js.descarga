@@ -1,0 +1,14 @@
+//keep track of sections to update images
+var sectionsAdjustImages = [];
+
+//After all website is loaded, adjust images added to sectionsUpdate
+$(document).ready(function(){
+	for(var i=0;i<sectionsAdjustImages.length;i++){
+		adjustAllContainerImagesToParent(sectionsAdjustImages[i]);
+	}
+});
+$(window).resize(function(){
+	for(var i=0;i<sectionsAdjustImages.length;i++){
+		adjustAllContainerImagesToParent(sectionsAdjustImages[i]);
+	}
+});
